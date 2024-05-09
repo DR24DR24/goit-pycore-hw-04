@@ -7,7 +7,7 @@ import typing
 
 def total_salary(path)->typing.Tuple[float,float]:
     try:
-        with open("salary_file.txt", "r",encoding='utf-8')  as file:
+        with open(path, "r",encoding='utf-8')  as file:
             #print(type(file))
             salary_list=[float(line.split(',')[-1]) for line in file]
      
